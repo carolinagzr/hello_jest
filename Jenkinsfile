@@ -12,14 +12,9 @@ pipeline {
       stage('Build') {
          steps {
              
-           //  bat 'npm install touch-cli -g'
+           
               bat 'npm install --force'
-              
-              
-          //   bat 'npm cache clean --force'
-     
-        //  bat 'npm install'
-           bat 'npm install --global http-server'
+              bat 'npm install --global http-server'
            
          }
       }
