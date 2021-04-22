@@ -15,12 +15,13 @@ pipeline {
            
               bat 'npm install --force'
               bat 'npm install --global http-server'
+            bat "npm run build" 
            
          }
       }
       stage('Test') {
          steps {
-            bat "npm run build" 
+            
            bat "npm run test"
          }}
     stage('Deploy') {
